@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>html</title>
+    <!-- cache -->
+    <meta http-equiv="Cache-Control" content="public">
+    <meta http-equiv="Cache-Control" content="max-age=34700">
+    <!-- responsice -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.css">
+
+    <!-- css & js -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script type="text/javascript" src="mashroom/simplePagination/sim"></script>
+
+
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="favicon.ico" />
+
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="header__item">
+            <a href="/" class="logo"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="header__item search">
+            <input type="text" placeholder="Поиск" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="header__item">
+            <div id="clock"></div>
+            <p>Пн-Пт: 09.00-19.00<br>Cб-Вс: 10.00-17.00</p>
+        </div>
+        <div class="header__item">
+            <div id="phone"></div>
+            <strong>+7-499-938-50-10</strong>
+        </div>
+        <div class="header__item">
+            <div id="price"></div>
+            <strong class="text-dashed">Запросить<br>прайс</strong>
+        </div>
+        <div class="header__item">
+            <button type="button" class="call">Заказать звонок</button>
+        </div>
+        <div class="header__item">
+            <div class="shop-bag">
+                <div id="bag"></div>
+                <div id="bag-active"></div>
+                <div class="shopping-bag__circle">
+                    0
+                </div>
+            </div>
+            <div class="bag-container">
+                <div class="products">
+                    <div class="products__row"></div>
+                    <div class="products__row"></div>
+                    <div class="products__row"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+	<div class="navbar-container">
+		<ul>
+			<li><a href="#" class="brand"><i class="fas fa-bars"></i>Каталог продукции</a></li>
+			<li class="select">
+				<a href="#" class="toggle">
+					О компании
+					<div id="submenu"></div>
+					<div id="submenu-a" style="display: none"></div>
+				</a>
+				<ul class="inner" style="display: none">
+					<li><a href="#">Документация</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="../news.html">Новости</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="link">Поставщикам</a>
+			</li>
+			<li>
+				<a href="#" class="link">Доставка и оплата</a>
+			</li>
+			<li>
+				<a href="#" class="link">Как сделать заказ</a>
+			</li>
+			<li>
+				<a href="#" class="link">Рецепты</a>
+			</li>
+			<li>
+				<a href="#" class="link">Контакты</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div class="card-product">
+    <div class="card-container">
+        <div class="product">
+            <div class="container">
+                <div class=""></div>
+                <img class="main-img" src="images/rec_img1.png">
+                <div class="product-pay">
+                    <p class="product-name">Сушеные белые грибы<br>(порошок)</p>
+                    <div class="article">артикул: 764725</div>
+                    <p>СТОИМОСТЬ</p>
+                    <div class="price">1 500 <p class="token">&#8381;</p></div>
+                        <input type="number" min="1" value="1">
+                </div>
+            </div>
+        </div>
+        <div class="switches">
+            <div class="container">
+                <div class="active"><a href="#cost">стоимость</a></div>
+                <div><a href="#specifications">характеристики</a></div>
+                <div><a href="#payment">доставка и оплата</a></div>
+                <div><a href="#order">как сделать заказ</a></div>
+                <div>отзывы о товаре</div>
+                <div>похожие товары</div>
+                <div><a href="#recipe">рецепты с товаром</a></div>
+            </div>
+        </div>
+        <div class="cost">
+            <div class="container">
+            <a class="headline" name="cost">Стоимость</a>
+                <div class="item table-head" style="background-color: #f4f7f2;">
+                    <p class="align__center">Наименование товара</p>
+                    <p class="align-just__center">Розница от 1 кг</p>
+                    <p class="align-just__center">Мелкий опт от 10 кг</p>
+                    <p class="align-just__center">Крупный опт от 100 кг</p>
+                </div>
+            <div class="item border__1px">
+                <p class="align__center">Белый гриб гранулы</p>
+                <p class="align-just__center">Только опт</p>
+                <p class="align-just__center">800 руб.</p>
+                <div class="price align-just__center">
+                    <p>Запросить цену</p>
+                </div>
+            </div>
+            <div class="item border__1px">
+                <p class="align__center">Белый гриб гранулы</p>
+                <p class="align-just__center">Только опт</p>
+                <p class="align-just__center">800 руб.</p>
+                <div class="price align-just__center">
+                    <p>Запросить цену</p>
+                </div>
+            </div>
+            <div class="item border__1px">
+                <p class="align__center">Белый гриб гранулы</p>
+                <p class="align-just__center">Только опт</p>
+                <p class="align-just__center">800 руб.</p>
+                <div class="price align-just__center">
+                    <p>Запросить цену</p>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="description">
+            <div class="container">
+                <p class="headline">Описание</p>
+                <p>
+                    Сушеные белые грибы в виде порошка исключительно популярны в домашней
+                    профессиональной кулинарии.
+                </p>
+                <p>
+                    Грибной край, изготавливая порошок, использует белые грибы,
+                    соответсвубщие определенным стандартам - неповрежденные, целые и крепкие,
+                    без примесей грибов других видов. Сырье дробится и сушится.
+                </p>
+                <p>
+                    Поскольку для грибов характерна особенность: акопление канцерогенов, особенно важно,
+                    что сырье собирается в чистых лесах Алтая и Сибири, вдали от опасных объектов.
+
+                </p>
+                <p>
+                    Для придания нужной консистенции и неповторимого насыщенного грибного вкуса
+                    требуется совсем немного порошка. Его добавляют в качестве
+                    основы или специи во время приготовления в различные блюда и полуфабрикаты:
+                </p>
+                <div class="checked-container flex">
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            супы и каши, в том числе, полуфабрикаты быстрого приготовления;
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            блюда из грибов (не обязательно белых, порошок усилит грибной вкус и аромат);
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            рагу и другие блюда из мяса и овощей;
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>плавленые сыры.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="specifications">
+            <div class="container">
+                <a class="headline" name="specifications">Характеристики</a>
+                <div class="item">
+                    <div class="item-i">
+                        <div>Грибы для порошка собраны</div>
+                        <div></div>
+                        <div>в лесах Алтайского края, Томской Области</div>
+                    </div>
+                    <div class="item-i">
+                        <div>Размер фракции</div>
+                        <div></div>
+                        <div>не более 1 мм</div>
+                    </div>
+                    <div class="item-i">
+                        <div>Наличие рпимесей</div>
+                        <div></div>
+                        <div>отсутствуют</div>
+                    </div>
+                    <div class="item-i">
+                        <div>Влажность</div>
+                        <div></div>
+                        <div>12 месяцев</div>
+                    </div>
+                    <div class="item-i">
+                        <div>Срок хранения</div>
+                        <div></div>
+                        <div>1 год при t 10-15&deg; C</div>
+                    </div>
+                    <div class="item-i">
+                        <div>Условия хранения</div>
+                        <div></div>
+                        <div>в сухом темном месте, при температуре 10-15&deg; С</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+            <div class="container">
+                <a class="headline" name="payment">Доставка и оплата</a>
+                <div class="checked-container flex">
+                    <p class="subtitle">Доставка выполняется следующим образом:</p>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            самовывоз со склада в г. Барнаул, ул. Опытная станция 15а;
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            силами стороних транспортных компаний(&laquo;Желдорэкспедиция&raquo;,
+                            &laquo;Деловые линии&raquo;, ТК &laquo;Кит&raquo; и другие);
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            Почтой России (наложенным платежом).
+                        </p>
+                    </div>
+                </div>
+                <div class="checked-container flex">
+                    <p class="subtitle">Способы оплаты товара:</p>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            при самовывозе - наличными на месте;
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            предоплата - на указаные карты &laquo;Альфабанка&raquo; и
+                            &laquo;Сбербанка&raquo;;
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            на расчетный счет после выставления счета.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order">
+            <div class="container">
+                <a class="headline" name="order">Как сделать заказ</a>
+                <div class="item">
+                    <div class="circle">1</div>
+                    <p>
+                        С помощью стандартной процедуры: добавить нужное количество выбранного товара в корзину
+                        (кнопка &laquo;Добавить в корзину&raquo;). В корзину отправляются все товары, которые вы отметите таким образом.
+                        Для удобства пользователей сайт напоминает вверху страницы об уже
+                        отложенных товарах. После того, как заказ собран, сумма автоматически
+                        рассчитана, можно приступить к оформлению. После того,
+                        как ы внесете платежную информацию в специальную форму и дополнительную - в примечание
+                        и отправите заявку, вам перезвонит менеджер для уточнения деталей.
+                    </p>
+                </div >
+                <div class="item">
+                    <div class="circle">2</div>
+                    <p>
+                        Позвонив по контактному телефону: +7 (3852) 720522 или заказать звонок.
+                        В этих случаях вы называете менеджеру товары и даете другую
+                        необходимую информацию.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="circle">3</div>
+                    <p>
+                        Отправить заявку на адрес электронной почты info@gribnoykray.ru. Менеджер после получения письма свяжется с вами в течение дня.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="container">
+                <p class="headline">Отзывы о товаре</p>
+            </div>
+                <div class="test owl-carousel">
+                    <div class="item">1</div>
+                    <div class="item">2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                    <div class="item">5</div>
+                </div>
+        </div>
+        <div class="same-product">
+
+        </div>
+        <div class="recipe">
+            <div class="container">
+                <a class="headline" name="recipe">Рецепты с товаром</a>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="images/rec_img1.png" alt="">
+                        <div class="r-text">
+                    <span>
+                        <a class="recipes-name">
+                            Суп из белых грибов
+                        </a>
+                    </span>
+                            <p>
+                                Густой и ароматный грибной суп
+                                из белых грибов -<br>
+                                класическое, любимое многими
+                                гурманами блюдо. Грибы для...
+                            </p>
+                            <div class="detail">
+                                <a>Подробней</a>
+                                <div class="arr-b"></div>
+                                <div class="arr-g" style="display: none"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/rec_img2.png">
+                        <div class="r-text">
+                    <span>
+                        <a class="recipes-name">
+                            Самса с грибами и картофелем
+                        </a>
+                    </span>
+                            <p>
+                                Вкуснейшая сочная самса с
+                                белыми грибами готовится
+                                совсем несложно. Мелко
+                                нашинкованный острым ножом...
+                            </p>
+                            <div class="detail">
+                                <a>Подробней</a>
+                                <div class="arr-b"></div>
+                                <div class="arr-g" style="display: none"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="r-text">
+                    <span>
+                        <a class="recipes-name">
+                            Мясной рулет с<br> начинкой из грибов и
+                            кедровых орешков
+                        </a>
+                    </span>
+                            <p>
+                                Прекрасное блюдо, которое
+                                станет украшением семейного
+                                обеда или праздничного стола.
+                                Ароматный и потрясающе...
+                            </p>
+                            <div class="detail">
+                                <a>Подробней</a>
+                                <div class="arr-b"></div>
+                                <div class="arr-g" style="display: none"></div>
+                            </div>
+                        </div>
+                        <img src="images/rec_img3.png">
+                    </div>
+                    <div class="grid-item">
+                        <div class="r-text">
+                            <a class="recipes-name">Фаршированные яйца с сушеными грибами</a>
+                            <p>
+                                Очищенные куриные вареные
+                                яйца разрезаются пополам.
+                                Желтки вынимаются и трутся на
+                                терке. Белки вареных яиц...
+                            </p>
+                            <div class="detail">
+                                <a>Подробней</a>
+                                <div class="arr-b"></div>
+                                <div class="arr-g" style="display: none"></div>
+                            </div>
+                        </div>
+                        <img src="images/rec_img4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="d1">
+            <img id="logo" src="images/logo.png">
+            <div>
+                <a>О компании</a><br>
+                <a>Отзывы</a>
+            </div>
+            <div>
+                <a>Доставка и оплата</a><br>
+                <a>Как сделать заказ</a>
+            </div>
+            <div>
+                <a>Поставщикам</a><br>
+                <a>Рецепты</a>
+            </div>
+            <div>
+                <a>Новости</a><br>
+                <a>Контакты</a>
+            </div>
+            <div class="header__item">
+                <div id="clock"></div>
+                <p>Пн-Пт: 09.00-19.00<br>Cб-Вс: 10.00-17.00</p>
+            </div>
+            <div class="header__item">
+                <div id="phone"></div>
+                <strong>+7-499-938-50-10</strong>
+            </div>
+        </div>
+        <div class="d2">
+            <div>
+                <p class="p1">&laquo;Грибной край&raquo; Copyright &copy;2019</p>
+            </div>
+            <div>
+                <a class="p2">Разработка сайта - Альянс+</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./javascript/main.js"></script>
+</body>
+</html>
