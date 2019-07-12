@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>html</title>
+    <!-- cache -->
+    <meta http-equiv="Cache-Control" content="public">
+    <meta http-equiv="Cache-Control" content="max-age=34700">
+    <!-- responsice -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.css">
+
+    <!-- css & js -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script type="text/javascript" src="mashroom/simplePagination/sim"></script>
+
+
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="favicon.ico" />
+
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div id="logo">
+            <a href="/"><img src="../images/logo.png" alt=""></a>
+        </div>
+        <div class="header__content">
+        <div class="item search">
+            <input type="text" placeholder="Поиск" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="item">
+            <div id="clock"></div>
+            <p>Пн-Пт: 09.00-19.00<br>Cб-Вс: 10.00-17.00</p>
+        </div>
+        <div class="item">
+            <div id="phone"></div>
+            <p id="number-phone">+7-499-938-50-10</p>
+        </div>
+        <div class="item">
+            <div id="price"></div>
+            <p class="text-dashed">Запросить<br>прайс</p>
+        </div>
+        <div class="item">
+            <button type="button" class="call">Заказать звонок</button>
+        </div>
+        <div class="item">
+            <div class="shop-bag">
+                <div id="bag"></div>
+                <div id="bag-active"></div>
+                <div class="shopping-bag__circle">
+                    0
+                </div>
+            </div>
+<!--            <div class="bag-container">-->
+<!--                <div class="products">-->
+<!--                    <div class="products__row"></div>-->
+<!--                    <div class="products__row"></div>-->
+<!--                    <div class="products__row"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+        </div>
+
+<!--        <div class="hamburger hamburger&#45;&#45;slider" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">-->
+<!--            <div class="hamburger-box">-->
+<!--                <div class="hamburger-inner">-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</header>
+<nav>
+	<div class="navbar-container">
+		<ul>
+			<li><a href="#" class="brand"><i class="fas fa-bars"></i>Каталог продукции</a></li>
+			<li class="select">
+				<a href="#" class="toggle">
+					О компании
+					<div id="submenu"></div>
+					<div id="submenu-a" style="display: none"></div>
+				</a>
+				<ul class="inner" style="display: none">
+					<li><a href="#">Документация</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="../news.html">Новости</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="link">Поставщикам</a>
+			</li>
+			<li>
+				<a href="#" class="link">Доставка и оплата</a>
+			</li>
+			<li>
+				<a href="#" class="link">Как сделать заказ</a>
+			</li>
+			<li>
+				<a href="#" class="link">Рецепты</a>
+			</li>
+			<li>
+				<a href="#" class="link">Контакты</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div class="slideshow">
+    <div class="slideshow-container">
+        <div class="slideshow-container__item">
+            <p>
+                Заготовка, переработка и<br>
+                оптовая торговля лесными<br>
+                грибами, ягодами и орехами по<br>
+                России, странам СНГ и Европы
+            </p>
+            <div class="slide-change-img">
+                <div class="slide__img">
+                    <img src="../images/img1.png" alt="">
+                </div>
+                <div class="slide__img">
+                    <img src="../images/img2.png" alt="">
+                </div>
+                <div class="slide__img">
+                    <img src="../images/img3.png" alt="">
+                </div>
+                <div class="slide__img">
+                    <img src="../images/img4.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main-slide">
+
+        </div>
+    </div>
+</div>
+<div class="advantages">
+    <div class="advantages-container">
+        <h3>Наши преимущества</h3>
+        <div class="mo">
+            <div class="advantages__row">
+                <div class="advantages__item">
+                    <div id="mushroom"></div>
+                    <h4>C 2008 года</h4>
+                    <p>занимаемся заготовкой</p>
+                    <p>лесных грибов и ягод</p>
+                </div>
+                <div class="advantages__item">
+                    <div id="map"></div>
+                    <h4>Переработка в 20</h4>
+                    <p>километрах от</p>
+                    <p>мест сбора</p>
+                </div>
+                <div class="advantages__item">
+                    <div id="bank"></div>
+                    <h4>Более 300 тонн</h4>
+                    <p>дикоросов ежегодно</p>
+                    <p>заготавливаем и</p>
+                    <p>перерабатываем</p>
+                </div>
+                <div class="advantages__item">
+                    <div id="truck"></div>
+                    <h4>От 1 дня</h4>
+                    <p>доставка по всей</p>
+                    <p>России</p>
+                </div>
+            </div>
+            <div class="advantages__row">
+                <div class="advantages__item">
+                    <div id="voters"></div>
+                    <h4>93% покупателей</h4>
+                    <p>становятся нашими</p>
+                    <p>постояными клиентами</p>
+                    <p>после 1-ой сделки</p>
+                </div>
+                <div class="advantages__item">
+                    <div id="eco"></div>
+                    <h4>Без ГМО</h4>
+                    <p>Используем только</p>
+                    <p>лесное эко сырье</p>
+                </div>
+                <div class="advantages__item">
+                    <div id="contract"></div>
+                    <h4>Сертифицировано</h4>
+                    <p>Вся продукция имеет</p>
+                    <p>декларации соответсвия</p>
+                </div>
+                <div class="advantages__item">
+                    <div id="house"></div>
+                    <h4>Более 1900 м2</h4>
+                    <p>общая площядь</p>
+                    <p>производительнных</p>
+                    <p>помещений</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="popular">
+    <div class="popular-container">
+        <h3>Найболее популярные товары</h3>
+        <div class="products-button">
+            <button>Замороженные грибы</button>
+            <button>Сушеные грибы</button>
+            <button>Соленые грибы</button>
+            <button>Ягоды</button>
+            <button>Орехи</button>
+        </div>
+        <div class="owl-carousel popular-carousel">
+                <div class="item">
+                    <img class="img-block" src="../images/test.png">
+                    <p class="name">Соленые грузди (полевые)</p>
+                    <div class="price-and-pay">
+                        <div class="price">
+                            <p>стоимость</p>
+                            <p class="cost">450<span class="token">&#8381;</span> </p>
+                        </div>
+                        <button class="pay">
+                            <div class="bag"></div>
+                            <span>
+                        <p>
+                            добавить
+                        </p>
+                        <p class="in-bag">в корзину</p>
+                        </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-block" src="../images/test.png">
+                    <p class="name">Соленые грузди (полевые)</p>
+                    <div class="price-and-pay">
+                        <div class="price">
+                            <p>стоимость</p>
+                            <p class="cost">450<span class="token">&#8381;</span> </p>
+                        </div>
+                        <button class="pay">
+                            <div class="bag"></div>
+                            <span>
+                        <p>
+                            добавить
+                        </p>
+                        <p class="in-bag">в корзину</p>
+                        </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-block" src="../images/test.png">
+                    <p class="name">Соленые грузди (полевые)</p>
+                    <div class="price-and-pay">
+                        <div class="price">
+                            <p>стоимость</p>
+                            <p class="cost">450<span class="token">&#8381;</span> </p>
+                        </div>
+                        <button class="pay">
+                            <div class="bag"></div>
+                            <span>
+                        <p>
+                            добавить
+                        </p>
+                        <p class="in-bag">в корзину</p>
+                        </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-block" src="../images/test.png">
+                    <p class="name">Соленые грузди (полевые)</p>
+                    <div class="price-and-pay">
+                        <div class="price">
+                            <p>стоимость</p>
+                            <p class="cost">450<span class="token">&#8381;</span> </p>
+                        </div>
+                        <button class="pay">
+                            <div class="bag"></div>
+                            <span>
+                        <p>
+                            добавить
+                        </p>
+                        <p class="in-bag">в корзину</p>
+                        </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-block" src="../images/test.png">
+                    <p class="name">Соленые грузди (полевые)</p>
+                    <div class="price-and-pay">
+                        <div class="price">
+                            <p>стоимость</p>
+                            <p class="cost">450<span class="token">&#8381;</span> </p>
+                        </div>
+                        <button class="pay">
+                            <div class="bag"></div>
+                            <span>
+                        <p>
+                            добавить
+                        </p>
+                        <p class="in-bag">в корзину</p>
+                        </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-block" src="../images/test.png">
+                    <p class="name">Соленые грузди (полевые)</p>
+                    <div class="price-and-pay">
+                        <div class="price">
+                            <p>стоимость</p>
+                            <p class="cost">450<span class="token">&#8381;</span> </p>
+                        </div>
+                        <button class="pay">
+                            <div class="bag"></div>
+                            <span>
+                                <p>добавить</p>
+                                <p class="in-bag">в корзину</p>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+        </div>
+        <div class="products-nav">
+            <div class="gl m-l-66"></div>
+            <button>Смотреть все товары</button>
+            <div class="gl m-r-66"></div>
+        </div>
+    </div>
+</div>
+<div class="clients">
+    <div class="clients-container">
+        <div class="c-text">
+        <p id="headline">Мнение клиентов<br>О нашей компании</p>
+        <p>
+            Постояно посталяем лесные грибы<br>
+            высокого качества для ресторанов, кафе,<br>
+            оптовых компаний, баз отдыха и<br>
+            интернет-магазинов
+        </p>
+
+    </div>
+        <div class="clients-carousel owl-carousel">
+            <div class="item">
+                <img>
+                <div>
+                    <p class="name">Сараева Ольга<br>Викторовна
+                    </p>
+                    <p class="profession">Директор комбината питания НГУЭУ, г. Новосибирск</p>
+                </div>
+                <p class="box1">
+                    Выражаю Вам огромную благодарность и признательность за честное,
+                    оперативное и эффективное сотрудничество, за своевременные поставки и качество
+                    поставляемой продукции. Надеемся на
+                </p>
+                <a>Читать полностю</a>
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+</div>
+<div class="action">
+    <div class="action-container">
+        <p id="headline">Акции</p>
+        <div class="items">
+            <div class="item">
+                <img class="img-block" src="../images/test.png">
+                <p class="name">Соленые грузди (полевые)</p>
+                <div class="price-and-pay">
+                    <div class="price">
+                        <p>стоимость</p>
+                        <p class="cost">450<span class="token">&#8381;</span> </p>
+                    </div>
+                    <button class="pay">
+                        <div class="bag"></div>
+                        <span>
+                        <p>
+                            добавить
+                        </p>
+                        <p class="in-bag">в корзину</p>
+                        </span>
+                    </button>
+                </div>
+                <img class="stock" src="../images/action.png">
+            </div>
+            <div class="item">
+                <img class="img-block" src="../images/test.png">
+                <p class="name">Соленые/маринованные маслята</p>
+                <div class="price-and-pay">
+                    <div class="price">
+                        <p>стоимость</p>
+                        <p class="cost">450<span class="token">&#8381;</span> </p>
+                    </div>
+                    <button class="pay">
+                        <div class="bag"></div>
+                        <span>
+                        <p>
+                            добавить
+                        </p>
+                        <p class="in-bag">в корзину</p>
+                        </span>
+                    </button>
+                </div>
+                <img class="stock" src="../images/action.png">
+            </div>
+            <div class="item">
+                <img class="img-block" src="../images/test.png">
+                <p class="name">Соленые/маринованные опята</p>
+                <div class="price-and-pay">
+                    <div class="price">
+                        <p>стоимость</p>
+                        <p class="cost">450<span class="token">&#8381;</span> </p>
+                    </div>
+                    <button class="pay">
+                        <div class="bag"></div>
+                        <span>
+                        <p>
+                            добавить
+                        </p>
+                        <p class="in-bag">в корзину</p>
+                        </span>
+                    </button>
+                </div>
+                <img class="stock" src="../images/action.png">
+            </div>
+            <div class="item">
+                <img class="img-block" src="../images/test.png">
+                <p class="name">Соленые/маринованные подосиновики</p>
+                <div class="price-and-pay">
+                    <div class="price">
+                        <p>стоимость</p>
+                        <p class="cost">450<span class="token">&#8381;</span> </p>
+                    </div>
+                    <button class="pay">
+                        <div class="bag"></div>
+                        <span>
+                        <p>
+                            добавить
+                        </p>
+                        <p class="in-bag">в корзину</p>
+                        </span>
+                    </button>
+                </div>
+                <img class="stock" src="../images/action.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="partners">
+    <div class="partners-container">
+        <p id="headline">Наши партнеры</p>
+        <div class="partners-item">
+            <img src="../images/par2.png" alt="">
+            <img src="../images/gammi.png" alt="">
+            <img src="../images/krupianaya.png" alt="">
+            <img src="../images/ngeu.png" alt="">
+        </div>
+    </div>
+</div>
+<div class="recipes">
+    <div class="container">
+        <p class="headline">Рецепты</p>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="../images/rec_img1.png" alt="">
+                <div class="r-text">
+                    <span>
+                        <a class="recipes-name">
+                            Суп из белых грибов
+                        </a>
+                    </span>
+                    <p>
+                        Густой и ароматный грибной суп
+                        из белых грибов -<br>
+                        класическое, любимое многими
+                        гурманами блюдо. Грибы для...
+                    </p>
+                    <div class="detail">
+                        <a>Подробней</a>
+                        <div class="arr-b"></div>
+                        <div class="arr-g" style="display: none"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="../images/rec_img2.png">
+                <div class="r-text">
+                    <span>
+                        <a class="recipes-name">
+                            Самса с грибами и картофелем
+                        </a>
+                    </span>
+                    <p>
+                        Вкуснейшая сочная самса с
+                        белыми грибами готовится
+                        совсем несложно. Мелко
+                        нашинкованный острым ножом...
+                    </p>
+                    <div class="detail">
+                        <a>Подробней</a>
+                        <div class="arr-b"></div>
+                        <div class="arr-g" style="display: none"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="r-text">
+                    <span>
+                        <a class="recipes-name">
+                            Мясной рулет с<br> начинкой из грибов и
+                            кедровых орешков
+                        </a>
+                    </span>
+                    <p>
+                        Прекрасное блюдо, которое
+                        станет украшением семейного
+                        обеда или праздничного стола.
+                        Ароматный и потрясающе...
+                    </p>
+                    <div class="detail">
+                        <a>Подробней</a>
+                        <div class="arr-b"></div>
+                        <div class="arr-g" style="display: none"></div>
+                    </div>
+                </div>
+                <img src="../images/rec_img3.png">
+            </div>
+            <div class="grid-item">
+                <div class="r-text">
+                    <a class="recipes-name">Фаршированные яйца с сушеными грибами</a>
+                    <p>
+                        Очищенные куриные вареные
+                        яйца разрезаются пополам.
+                        Желтки вынимаются и трутся на
+                        терке. Белки вареных яиц...
+                    </p>
+                    <div class="detail">
+                        <a>Подробней</a>
+                        <div class="arr-b"></div>
+                        <div class="arr-g" style="display: none"></div>
+                    </div>
+                </div>
+                <img src="../images/rec_img4.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="company">
+    <div class="container">
+        <p id="headline">О компании</p>
+        <div class="video">
+            <iframe width="555" height="400" src="https://www.youtube.com/embed/dl16e_mG6hg" frameborder="0"></iframe>
+            <div class="video__text">
+                <p id="p1">
+                    Компания &laquo;Грибной край&raquo; занимается
+                    заготовкой и переработкой лесных
+                    дикорастущих грибов с 2008 года.
+                </p>
+                <p id="p2">
+                    Мы реализуем лесные грибы оптом и в розницу
+                    от 1кг, предлагая весь возможный ассортимент:
+                </p>
+                <div class="flex">
+                    <div class="arrow-y"></div>
+                    <p class="p3">Замороженые лесные грибы</p>
+                </div>
+                <div class="flex">
+                    <div class="arrow-y"></div>
+                    <p class="p3">Сушеные грибы</p>
+                </div>
+                <div class="flex">
+                    <div class="arrow-y"></div>
+                    <p class="p3">Соленые/маринованные грибы</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-container">
+            <p>
+                Заготавливаем и реализуем папоротники и другие дары леса,
+                алтайский мед. Предлагаем купить грибы с доставкой,
+                собранные в экологически чистых районах Алтайского края:
+            </p>
+            <div class="checked-container flex">
+                <div class="circle"><div class="check-mark"></div></div>
+                <p>Белые грибы</p>
+                <div class="circle"><div class="check-mark"></div></div>
+                <p>Лисички</p>
+                <div class="circle"><div class="check-mark"></div></div>
+                <p>Опята</p>
+                <div class="circle"><div class="check-mark"></div></div>
+                <p>Грузди</p>
+                <div class="circle"><div class="check-mark"></div></div>
+                <p>Маслята</p>
+                <div class="circle"><div class="check-mark"></div></div>
+                <p>Подосиновики</p>
+                <div class="circle"><div class="check-mark"></div></div>
+                <p>Сморчки</p>
+                <div class="circle"><div class="check-mark"></div></div>
+                <p>Ежовик</p>
+            </div>
+            <p>
+                Постоянно поставляем лесные грибы высокого качества для ресторанов,
+                кафе, оптовых компаний, баз отдыха и интернет-магазинов.
+                Сушеный белый гриб в порошке и фракции оптимально подходит для пищевых производств.
+            </p>
+            <p class="p1">
+                У нас вы можете купить грибы от 1 кг до 1 тонны, оптом и в розницу, по разумной цене,
+                минуя посредников. Мы контролируем все этапы заготовки и продажи - от сбора до
+                поступления заказа конечному потребителю. Каждому заказчику мы гарантируем индивидуальный
+                подход. Обязательно учтем ваши пожелания по ассортименту, согласуем оплату, обсудим все
+                детали договора.
+            </p>
+            <div class="fadeout"></div>
+        </div>
+        <div class="text-dashed">
+            <a href="#">Читать полностью</a>
+        </div>
+    </div>
+    <div class="circle1"></div>
+    <div class="circle4"></div>
+    <div class="circle3"></div>
+    <div class="circle2"></div>
+</div>
+<footer>
+    <div class="container">
+        <div class="d1">
+            <a href="/" id="logo"><img src="../images/logo.png"></a>
+            <div class="footer-links">
+                <div>
+                    <a>О компании</a><br>
+                    <a>Отзывы</a>
+                </div>
+                <div>
+                    <a>Доставка и оплата</a><br>
+                    <a>Как сделать заказ</a>
+                </div>
+                <div>
+                    <a>Поставщикам</a><br>
+                    <a>Рецепты</a>
+                </div>
+                <div>
+                    <a>Новости</a><br>
+                    <a>Контакты</a>
+                </div>
+            </div>
+            <div class="footer-time-phone">
+                <div class="item">
+                    <div id="clock"></div>
+                    <p>Пн-Пт: 09.00-19.00<br>Cб-Вс: 10.00-17.00</p>
+                </div>
+                <div class="item">
+                    <div id="phone"></div>
+                    <p id="number-phone">+7-499-938-50-10</p>
+                </div>
+            </div>
+        </div>
+        <div class="d2">
+            <div>
+                <p class="p1">&laquo;Грибной край&raquo; Copyright &copy;2019</p>
+            </div>
+            <div id="alliance">
+                <a class="p2">Разработка сайта &mdash; Альянс+</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./javascript/main.js"></script>
+</body>
+</html>

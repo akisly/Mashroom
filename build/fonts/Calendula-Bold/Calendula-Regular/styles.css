@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Calendula-Regular';
+  src: url('Calendula-Regular.eot?#iefix') format('embedded-opentype'),  url('Calendula-Regular.otf')  format('opentype'),
+	     url('Calendula-Regular.woff') format('woff'), url('Calendula-Regular.ttf')  format('truetype'), url('Calendula-Regular.svg#Calendula-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

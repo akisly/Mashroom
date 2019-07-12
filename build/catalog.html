@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>html</title>
+    <!-- cache -->
+    <meta http-equiv="Cache-Control" content="public">
+    <meta http-equiv="Cache-Control" content="max-age=34700">
+    <!-- responsice -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://bootswatch.com/superhero/bootstrap.css">
+
+    <!-- css & js -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <script type="text/javascript" src="mashroom/simplePagination/sim"></script>
+
+
+    <!-- favicon -->
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="favicon.ico" />
+
+    <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div id="logo">
+            <a href="/"><img src="../images/logo.png" alt=""></a>
+        </div>
+        <div class="header__content">
+        <div class="item search">
+            <input type="text" placeholder="Поиск" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="item">
+            <div id="clock"></div>
+            <p>Пн-Пт: 09.00-19.00<br>Cб-Вс: 10.00-17.00</p>
+        </div>
+        <div class="item">
+            <div id="phone"></div>
+            <p id="number-phone">+7-499-938-50-10</p>
+        </div>
+        <div class="item">
+            <div id="price"></div>
+            <p class="text-dashed">Запросить<br>прайс</p>
+        </div>
+        <div class="item">
+            <button type="button" class="call">Заказать звонок</button>
+        </div>
+        <div class="item">
+            <div class="shop-bag">
+                <div id="bag"></div>
+                <div id="bag-active"></div>
+                <div class="shopping-bag__circle">
+                    0
+                </div>
+            </div>
+<!--            <div class="bag-container">-->
+<!--                <div class="products">-->
+<!--                    <div class="products__row"></div>-->
+<!--                    <div class="products__row"></div>-->
+<!--                    <div class="products__row"></div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </div>
+        </div>
+
+<!--        <div class="hamburger hamburger&#45;&#45;slider" tabindex="0" aria-label="Menu" role="button" aria-controls="navigation">-->
+<!--            <div class="hamburger-box">-->
+<!--                <div class="hamburger-inner">-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+    </div>
+</header>
+<nav>
+	<div class="navbar-container">
+		<ul>
+			<li><a href="#" class="brand"><i class="fas fa-bars"></i>Каталог продукции</a></li>
+			<li class="select">
+				<a href="#" class="toggle">
+					О компании
+					<div id="submenu"></div>
+					<div id="submenu-a" style="display: none"></div>
+				</a>
+				<ul class="inner" style="display: none">
+					<li><a href="#">Документация</a></li>
+					<li><a href="#">Отзывы</a></li>
+					<li><a href="../news.html">Новости</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#" class="link">Поставщикам</a>
+			</li>
+			<li>
+				<a href="#" class="link">Доставка и оплата</a>
+			</li>
+			<li>
+				<a href="#" class="link">Как сделать заказ</a>
+			</li>
+			<li>
+				<a href="#" class="link">Рецепты</a>
+			</li>
+			<li>
+				<a href="#" class="link">Контакты</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+<div class="catalog">
+    <div class="container">
+        <div class="bread"></div>
+        <p id="headline">Сушеные грибы</p>
+        <div id="page">
+            <div class="flex-container">
+                <!--            row 1-->
+                <div class="flex-item" style="background: red"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <!--            row 2-->
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <!--            row 3-->
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <!--            row 4-->
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+                <div class="flex-item"></div>
+            </div>
+        </div>
+        <div class="nav-pagination">
+            <div id="arr-l-b" class="previous-page"></div>
+            <div><hr></div>
+            <ul class=pagination1>
+            </ul>
+            <div><hr></div>
+        </div>
+        <div class="catalog__text">
+            <p>
+                &laquo;Грибной край&raquo; предлагает купить сушеные грибы: белые, подосиновики,
+                опята, маслята, лисички, ежовики &mdash; оптом и в розницу от 1 килограмма.
+                Доступная цена. Оперативная доставка
+            </p>
+            <div class="description">
+                <p class="headline">Описание</p>
+                <p>
+                    Сушеные грибы широко используются в приготовлении разнообразных блюд,
+                    продуктов, полуфабрикатов, приправ, соусов, подлив. Порошок, гранулы
+                    или целые сушеные грибочки привносят в рагу, каши, супы, плавленые сыры неповторимый аромат
+                    и насыщенный вкус.<br>
+                    Чаще всего для супов и каш используются порошок и гранулы сушеных белых грибов,
+                    а также целые сушеные лисички. В грибных, мясных, овощных
+                    и смешаных блюдах уместы опята, маслята, подосиновики. Каждый повар имеет свой рецепт.
+                    В ресторанах и на домашней кухне можно<br>
+                    экспериментировать и получать великолепный результат.
+                </p>
+            </div>
+            <div class="specifications">
+                <p class="headline">Характеристики</p>
+                <p>
+                    Для сушки используются целые молодые отборные грибы,
+                    собраные в сезон в лесах Алтая и Сибири &mdash; экологически чистые,
+                    соответсвующие определенным стандартам.
+                </p>
+                <p class="subtitle">Критерии для сушеных грибов разных видов могут отличаться:</p>
+                <div class="checked-container flex">
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            Белые - делятся по сортам, причем учитывается наличие червоточин, толщина
+                            пластинки, соответствие силуэта пластинки целому грибу, процент
+                            поврежденных грибов, кусочков и порошка после сушки.
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>Подосиновики &mdash; используются грибы одного размера, процент червоточин &mdash; не более 2 %.</p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            Маслята & сушатся целые грибы, шляпы и ножки, причем процент последних не
+                            должен превышать 12 % от объема.
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>Ежовики, лисички, опята &mdash; сушатся целиком, червоточины отсутствуют.</p>
+                    </div>
+                </div>
+                <p class="subtitle">Все грибы должны соответствовать стандартам, в которые входят:</p>
+                <div class="checked-container flex">
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            отсутсвие подгорелых и других неестествиных пятен;
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>отсутсвие трухлявости (гриб эластичен и упруг);</p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            окрас до и после сушки сохраняет однородность и естественость;
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>сушеные грибы сохраняют необходимый процент влажности (как правило, не более 14 %)</p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>форма и размеры  экземляров близки в каждой партии для сушки.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="delivery">
+                <p class="headline">Доставка</p>
+                <p>Доставка в Барнауле производится самовывозом. Адрес склада: г. Барнаул, ул. Опытная станция 15а.</p>
+                <p class="subtitle">Доставка по Москве, Санкт-Петербургу, а также в другие регионы России возможна
+                    следующими способами:</p>
+                <div class="checked-container flex">
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>
+                            силами стороних транспортных компаний(&laquo;Желдорэкспедиция&raquo;,
+                            &laquo;Деловые линии&raquo;, ТК &laquo;Кит&raquo; и другие);
+                        </p>
+                    </div>
+                    <div class="checked-container__item flex">
+                        <div class="circle">
+                            <div class="check-mark"></div>
+                        </div>
+                        <p>наложенным платежом Почтой России.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="d1">
+            <a href="/" id="logo"><img src="../images/logo.png"></a>
+            <div class="footer-links">
+                <div>
+                    <a>О компании</a><br>
+                    <a>Отзывы</a>
+                </div>
+                <div>
+                    <a>Доставка и оплата</a><br>
+                    <a>Как сделать заказ</a>
+                </div>
+                <div>
+                    <a>Поставщикам</a><br>
+                    <a>Рецепты</a>
+                </div>
+                <div>
+                    <a>Новости</a><br>
+                    <a>Контакты</a>
+                </div>
+            </div>
+            <div class="footer-time-phone">
+                <div class="item">
+                    <div id="clock"></div>
+                    <p>Пн-Пт: 09.00-19.00<br>Cб-Вс: 10.00-17.00</p>
+                </div>
+                <div class="item">
+                    <div id="phone"></div>
+                    <p id="number-phone">+7-499-938-50-10</p>
+                </div>
+            </div>
+        </div>
+        <div class="d2">
+            <div>
+                <p class="p1">&laquo;Грибной край&raquo; Copyright &copy;2019</p>
+            </div>
+            <div id="alliance">
+                <a class="p2">Разработка сайта &mdash; Альянс+</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="./javascript/main.js"></script>
+</body>
+</html>
